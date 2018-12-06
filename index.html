@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+</body>
+</html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<!--fonts-->
+<link rel="stylesheet" href="https://use.typekit.net/zxq1ebm.css">
+<link rel="stylesheet" href="https://use.typekit.net/zxq1ebm.css">
+
+<nav>
+    <ul>
+<li><a class="name" href="index.html"><b>Caitlin Madden</b></a></li>
+        
+<div class="navi" id="topnav">
+<!--hidden button before responsive-->
+<button> Menu </button> 
+  <li><a class="box" href="experience.html">Experience</a></li>
+  <li><a class="box" href="education.html">Education</a></li>
+  <li><a class="box" href="skills.html">Skills</a></li>
+  <li><a class="box" href="contact.html">Contact</a></li>   
+</div>
+    </ul>
+</nav>
+    
+<!--CSS-->
+<style> /*Navigation*/
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 6px;
+}
+li a {
+   float: left;
+    display: block;
+    color:  black;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-family: balboa-plus-inline, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+}
+li a:hover {
+    font-weight: bolder;
+}
+.name{
+    font-family: balboa-plus-inline, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    margin-left: -96px;
+}
+.navi{
+    margin-left: 50%; 
+    }
+button{
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
+    }   
+ 
+ /*Body*/   
+body{   
+    height: 1000px;
+    background: linear-gradient(white,#CCE6FF);
+    }
+    ol{ /*bullet points*/
+      font-size: 1.5em;
+      font-family: Garamond;
+      letter-spacing: .8px;
+        margin-top: 2.8%;
+}
+     li{
+       font-family: Garamond;
+       line-height: 30px;
+       margin-left: 10%;;
+}
+    p{
+        color: black;
+        font-family: Garamond;
+        margin-left: 6.9%; 
+        font-size: 18px;
+        margin-top: 3%;
+        letter-spacing: .02em;
+        line-height: 1.8em;
+        margin-right: 8%;
+    } 
+    .image{
+       margin-left: 15%;
+    }
+
+/*RESPONSIVE FOR PHONE*/
+@media screen and (max-width: 900px) {
+body{   
+    height: 2000px;
+    background: linear-gradient(white,#CCE6FF); 
+ } 
+.name{
+        margin-left: -70px;
+    }
+.navi{
+    float: left;
+    margin-top: 50px;
+    margin-left:-200px;
+    }   
+    li a{
+        line-height: .5em;
+    }
+     button{
+        background-color: black;
+        color: white;
+    }
+    .image{
+      width:500px; 
+        margin-left: 0px;
+    }
+         
+         
+         
+</style>
+    
+<!--Toggle for the Nav-->
+<script>
+$( "button" ).click(function() {
+  $( ".box" ).toggle( "slow" );
+}); 
+</script>  
+</head>
+    
+<!--Main content-->
+<body> 
+<p><b>Hi!</b> My name is Caitlin Madden. I am currently a Sophormore at 
+Miami University where I am majoring in Interactive Media studies. Interactive Media Studies is a program that integrates Digital Media, Design Technology and Business. With an additional minor in Marketing, through the Farmer School of Business, I plan on pursuing a career in Digital Marketing with a focus on branding and advertising.</p>   
+<br><br>
+<img class="image"  src="ims.png"> 
+</body>
+</html>

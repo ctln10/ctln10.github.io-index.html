@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+ <!--load ajax-->   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--fonts-->
+<link rel="stylesheet" href="https://use.typekit.net/zxq1ebm.css">
+<link rel="stylesheet" href="https://use.typekit.net/zxq1ebm.css">
+  
+<nav>
+    <ul>
+<li><a class="name" href="index.html"><b>Caitlin Madden</b></a></li>
+    
+<div class="navi" id="topnav"><br>
+<!--hidden button before responsive-->
+<button class="hit"> Menu </button>      
+  <li><a class="box"  href="experience.html">Experience</a></li>
+  <li><a class="box" href="education.html">Education</a></li>
+  <li><a class="box" href="skills.html">Skills</a></li>
+  <li><a  class="box"href="contact.html">Contact</a></li>
+</div>
+    </ul>
+</nav>
+
+<style> /*Navigation*/
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: -22px;
+}
+li a {
+   float: left;
+    display: block;
+    color:  black;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-family: balboa-plus-inline, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+}
+
+li a:hover {
+    font-weight: bolder;
+}
+.name{
+font-family: balboa-plus-inline, sans-serif;
+font-style: normal;
+font-weight: 400;
+color: black;
+margin-left: -96px;
+    margin-top: 22px;
+}
+
+.navi{
+    margin-left: 50%; 
+   margin-top: 4px;
+    
+    }  
+button{
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
+    }   
+    
+ /*Body*/   
+body{   
+    height: 1000px;
+    background: linear-gradient(white,#EDCBC7 );
+    }
+.type{
+     margin-top: 3%;
+    }
+ 
+    ol{ /*bullet points*/
+      color:#576CA8;
+      font-size: 1.5em;
+      font-family: Garamond;
+      letter-spacing: .8px;
+}
+     li{
+       font-family: Garamond;
+       line-height: 30px;
+       margin-left: 10%;;
+}
+    
+/*experience headers*/  
+    p1{
+        margin-left: 95px;
+        font-size: 18px;
+ } 
+    p{
+        font-family: Garamond;
+        margin-left:120px;
+}
+   
+    .links{
+        text-decoration: none;
+        color:navy;
+    }
+    .links:hover{
+        color: navy;
+    }
+    
+ /* link button animation*/   
+ .linkbutton{
+    background: transparent;
+     color:mintcream;
+    font-family: Garamond;
+     border:none;
+     position:relative;
+     height:40px;
+     font-size:18px;
+     transition:800ms ease all;
+     margin-left: 12%;
+      padding: 10px;
+}
+.linkbutton:hover{
+    background:transparent;
+    color:black;
+}
+.linkbutton:before,.linkbutton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: black;
+    transition:400ms ease all;
+}
+.linkbutton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.linkbutton:hover:before,.linkbutton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}   
+</style>
+  
+<style> 
+/*RESPONSIVE*/
+@media screen and (max-width: 900px) {
+body{   
+    height: 2000px;
+    background: linear-gradient(white,#EDCBC7); 
+ } 
+.name{
+        margin-left: -70px;
+    }
+.navi{
+    float: left;
+    margin-top: 50px;
+    margin-left:-200px;
+    }   
+    li a{
+        line-height: .5em;
+    }
+ p1{
+      margin-left: 40px;
+        font-size: 18px;   
+    }
+    p{
+        margin-left:-10px;
+        text-align: center;
+    }
+     button{
+        background-color: black;
+        color: white;
+</style>
+
+</head>  
+<body>
+<!--work experience:-->
+<div class="type">
+<p1><b>PROFESSIONAL EXPERIENCE</b></p1>
+<p>American Greetings, Westlake, OH </p>                                      <p>Creative Specialist – On Call  </p>                                      <p>April 2018 - Present</p>  
+<!--start of bullet points-->
+<Li>Supporting member of the American Greetings Cost of Goods Reduction Initiative</Li>
+<Li>Responsible for archiving existing Greeting Card designs that have been designated as obsolete</Li>
+<Li>Successfully identified and archived ~5% of obsolete designs (30,000 designs year-to-date)</Li>
+<Li>Archiving designs produces an updated, current and active inventory for American Greetings</Li>
+
+    
+    
+    
+<!--projects:-->   
+<br><br><p1><b>EDUCATIONAL EXPERIENCE</b></p1>  
+<p>Project: Social Media Marketing Audit and Analysis (Panera Bread)</p>
+<!--start of bullet points-->
+<Li>Utilized Adobe Spark Pages to illustrate, document and assess Panera Bread’s current social media efforts </Li>
+<Li>Analyzed brand's social media voice and dimensions that contribute to maintaining voice across different platforms </Li>
+<Li>Identified where Panera Bread succeeds in best practices and how content varies for consumers within different stages of the buyer’s journey </Li>
+<Li>Highlighted overall strengths/weaknesses; providing recommendations on how to improve social media practices</Li>
+    
+<button class="linkbutton" onclick="openwindow()">View Project</button>  
+ 
+    
+<!--JavaScript Function to link to other page-->      
+<script>
+    function openwindow(){
+        window.open("https://spark.adobe.com/page/KFe0kgjMZFmp7/" );
+    }
+</script>
+<!--Toggle nav-->
+<script>
+$( ".hit" ).click(function() {
+  $( ".box" ).toggle( "slow" );
+}); 
+</script>
+  
+<!--volunteer content-->
+<br><br><p1><b>VOLUNTEER EXPERIENCE</b> </p1>
+<p>Horizon Child Development Center, Cleveland, OH  </p>                         <p>Teaching Assistant, Summer 2016</p>
+ <!--start of bullet points-->
+<Li>Responsible for the care of 20 children; ages ranged between newborn to 5 years old</Li>
+<Li>Managed daily tasks associated with:
+Preparing of meals - breakfast, lunch and dinner,
+set-up and take-down of daily decoration within the classroom, 
+overseeing daily craft or learning activities </Li>   
+</div>
+<br><br>    
+</body>
+</html>
